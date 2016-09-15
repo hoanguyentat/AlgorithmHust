@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <iostream>
+#include <stdlib.h>
 #include <string.h>
 
 using namespace std;
@@ -16,32 +17,27 @@ char arr[101][1001];
 char ch[1001];
 void readData(){
 	cin >> numberCases;
-	if (numberCases < 1 || numberCases > 100)
-	{
+	if (numberCases < 1 || numberCases > 100){
 		exit(0);
 	}
-	for (int i = 0; i < numberCases+1; ++i)
-	{
+	for (int i = 0; i < numberCases; ++i){
 		fflush(stdin);
 		
 		fgets(ch, 1001, stdin);
 		fflush(stdin); 
-		if (strlen(ch) > 1000)
-		{
+		if (strlen(ch) > 1000){
 			exit(0);
-		}
-		
+		}		
 		strcpy(arr[i],ch);
 	}
 }
 
 //Tra ve ket qua ung voi moi ki tu
 void check(){
-	for(int i = 1 ; i < numberCases+1; i++){
+	for(int i = 0 ; i < numberCases; i++){
 		char result[5000] = "";
 		for(int j = 0; j < strlen(arr[i]) - 1; j++){
-			if ((arr[i][j] < 'a' || arr[i][j] > 'z') && arr[i][j] != ' ')
-			{
+			if ((arr[i][j] < 'a' || arr[i][j] > 'z') && arr[i][j] != ' '){
 				exit(0);
 			}
 
@@ -129,7 +125,7 @@ void check(){
 			}
 		}
 		// cout <<"Case #"<< i + 1 << ": " << result ;
-		printf("Case #%d: %s\n",i, result);
+		printf("Case #%d: %s\n",i+1, result);
 	}
 }
 int main()

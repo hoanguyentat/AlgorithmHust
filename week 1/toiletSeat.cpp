@@ -18,10 +18,10 @@ void readData(){
 	cin >> input;
 	pos1 = pos2 = pos3 = input[0];
 	len = strlen(input);
-	if(len < 2 || len > 1000 ) exit(0);
-	for(int i = 0; i < len; i++){
-		if(input[i] != 'U' && input[i] != 'D') exit(0);
-	}
+	// if(len < 2 || len > 1000 ) exit(0);
+	// for(int i = 0; i < len; i++){
+	// 	if(input[i] != 'U' && input[i] != 'D') exit(0);
+	// }
 }
 
 void leave(){

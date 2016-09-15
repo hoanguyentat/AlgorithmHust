@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 #include <iostream>
 #include <string.h>
 
@@ -29,7 +30,7 @@ void check(char a[], char b[]){
 	else if( a[0] == b[0] && a[1] == b[1]){
 		printf("0 %c %c\n",a[0]+65, a[1]+49);
 	}
-	else if(fabs(a[0] - b[0])== fabs(a[1] - b[1])){
+	else if(abs(a[0] - b[0]) == abs(a[1] - b[1])){
 		printf("1 %c %c %c %c\n",a[0]+65, a[1]+49, b[0]+65, b[1]+49);
 	}
 	// Nam tren hai duong cheo khac nhau

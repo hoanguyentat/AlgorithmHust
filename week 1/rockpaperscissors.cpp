@@ -49,7 +49,6 @@ int check(char x[], char y[]){
 
 // In ket qua ra man hinh
 void result(int b[], int c[], int num){
-	cout << "\n";
 	for (int i = 0; i < num; ++i)
 	{
 		if (b[i] == 0 && c[i] == 0)

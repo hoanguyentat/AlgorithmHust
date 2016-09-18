@@ -1,3 +1,13 @@
+/**
+	* Doc tung dong input
+	* Kiem tra so hau tren cung mot hang, cot, duong cheo
+	* Ứng với mỗi dãy nhập vào mà có trọng số bằng 0 thì 
+	  thằng nhỏ nhất trong tất cả sẽ là thằng đứng đầu tiên khi duyệt xong thì 
+	  loại bỏ số đó ra khỏi danh sách và kiểm tra xem đối với những số còn lại 
+	  số nào nhỏ hơn số vừa loại thì trừ trọng số đi 1, tiếp tục duyệt như trên 
+	  cho đến khi số phần tử bằng 0
+	* do phuc tap O(n2)
+*/
 #include <stdio.h>
 #include <math.h>
 #include <iostream>

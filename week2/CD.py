@@ -1,3 +1,9 @@
+# Doc tung dong input
+# Lưu dữ liệu của jack vào trong một dictionary trong python(giống json)
+# ứng với mỗi dữ liệu đọc được từ jin kiểm tra xem có thuộc trong jack k có thì cộng thêm 1
+	# vào biến đếm, đọc cho đến khi gặp kí tự kết thúc vào in ra biến count
+# do phuc tap O(n*m)
+
 def readData():
 	input = raw_input()
 	while (input != "0 0"):

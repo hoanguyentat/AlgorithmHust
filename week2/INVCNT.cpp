@@ -1,3 +1,13 @@
+/**
+	* Doc tung dong input
+	* Dựa theo thuật toán sắp xếp trộn, đối với mỗi dãy con chia thành hai dãy con và sắp xếp
+	  do việc sắp xếp dãy con bên trái và dãy con bên phải k làm thay đổi vị trí của hai dãy so
+	  với phàn tử chọn để chia dãy (mid)
+      giả sử tại phần tử thứ i của dãy con bên trái lớn hơn phần tử thứ j của dãy con bên phải thì ta
+      cộng số inversion lên mid-i+1 phần tử cứ tiếp tục cho đến khi dãy con được sắp xếp ta sẽ thu được
+      inversion cần tìm
+	* do phuc tap O(nlogn) theo độ phức tạp của phương pháp trộn
+*/
 #include <stdio.h>
 #include <math.h>
 #include <iostream>

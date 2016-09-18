@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# Doc tung dong input
+# Lưu rules vào trong list
+# ứng với mỗi đoạn text thì đọc từng từ và kiểm tra xem từ đó có thuộc trong 
+	# list k, nếu có cộng giá trị của salary với giá tương ứng, tiếp tục duyệt cho đến khi
+	# gặp "."
+# do phuc tap O(n)
+
 rules = {}
 
 def result(data):

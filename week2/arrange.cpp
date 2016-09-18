@@ -1,3 +1,12 @@
+/**
+	* Doc tung dong input
+	* Nếu a > b thì a ^ b < b ^a : a, b thuộc N* trừ trường hợp a = 2, b = 3(đã chứng minh)
+	* Trong lúc đọc dữ liệu nếu giá trị biến là 1 thì in ra màn hình ngược lại thì cho vào mảng
+	* Sắp xếp mảng dữ liệu vừa nhập và in ra kết quả theo chiều giảm dần đến trường hợp 2 và 3 thì in theo 2 trước 3 sau
+	* do phuc tap O(nlogn) theo độ phức tạp của thuật toán sắp xếp
+*/
+
+
 #include <stdio.h>
 #include <math.h>
 #include <iostream>

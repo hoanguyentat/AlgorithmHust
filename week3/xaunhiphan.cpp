@@ -1,3 +1,13 @@
+/**
+	* Đọc từng phàn tử
+	* Sinh ngẫu nhiên các xâu nhị phân bằng đệ toán đệ quy  trong khi sinh kiem tra 
+		* day con da sinh xem co chua i so 0 lien tiep k, neu co thi loai bo truong hop nay,
+		* neu khong thi tiep tuc duyet, neu k == n - 1 cộng thêm giá trị cho biến đếm, 
+		* khi biến đếm bằng số thự tự đầu vào thì in ra
+	*  In ra ket qua
+	* Muc do phuc tap thuat toan O(n2)
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -8,6 +18,7 @@ int n, k, i;
 int count = 0;
 int a[10001];
 
+// kiem tra xem xau co chua i day con lien tiep khong!
 bool checkString(int m){
 	int check = 0;
 	for (int j = 0; j <= m; ++j){
@@ -23,14 +34,15 @@ bool checkString(int m){
 void print(){
 	count++;
 	if (count == k){
-		printf("\n");
 		for (int j = 0; j < n; ++j){
-			printf("%d ", a[j]);
+		 	(j < n - 1) ? printf("%d ", a[j]) : printf("%d", a[j]);
 		}
+//		printf("\n");
 		exit(0);
 	}	
 }
 
+// De quy sinh phan tu
 void Try(int k){
 	for (int j = 0; j <= 1; ++j){
 		a[k] = j;

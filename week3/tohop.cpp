@@ -1,3 +1,12 @@
+/**
+  * Đọc từng phàn tử
+  * Sinh ngẫu nhiên các tổ hợp bằng đệ toán đệ quy trong khi sinh kiem tra 
+    * dãy con nếu k == n - 1 cộng thêm giá trị cho biến đếm, 
+    * khi biến đếm bằng số thự tự đầu vào thì in ra
+  *  In ra ket qua
+  * Muc do phuc tap thuat toan O(n2)
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 int x[10000];
@@ -15,7 +24,7 @@ void print() {
 }
 
 
- // h�m quay lui
+ // hàm quay lui, tinh thu tu thu k va in ra
 void Try(int i) {
     for(int j = x[i-1] +1; j <= n-k + i; j++) {
             x[i] = j;
